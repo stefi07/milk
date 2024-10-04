@@ -319,7 +319,7 @@ target_include_directories(${PROJECT_NAME}_all INTERFACE
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
   $<INSTALL_INTERFACE:include>
 )
-install(TARGETS ${PROJECT_NAME}_all EXPORT milkTargets)
+install(TARGETS ${PROJECT_NAME}_all EXPORT ${PROJECT_NAME}Targets)
 
 include(CMakePackageConfigHelpers)
 
